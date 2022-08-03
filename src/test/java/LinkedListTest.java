@@ -1,5 +1,5 @@
 import org.junit.jupiter.api.*;
-import week4.linkedList.ListNode;
+import week4.ListNode;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -31,7 +31,7 @@ public class LinkedListTest {
     @DisplayName("삭제했음")
     @Test
     public void removeTest() throws Exception {
-        listNode.remove(listNode, 3);
+        listNode.remove(zero, 3);
     }
 
     @DisplayName("포함되어있음")

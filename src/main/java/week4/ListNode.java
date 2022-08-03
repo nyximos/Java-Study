@@ -1,4 +1,4 @@
-package week4.linkedList;
+package week4;
 
 public class ListNode {
     private int data;
@@ -21,6 +21,16 @@ public class ListNode {
 
     public int getData(){
         return this.data;
+    }
+
+    public ListNode add(ListNode head, ListNode newNode) {
+        ListNode node = head;
+
+        while (node.link != null) {
+            node = node.link;
+        }
+        node.link = newNode;
+        return newNode;
     }
 
     public ListNode add(ListNode head, ListNode nodeToAdd, int position) {
