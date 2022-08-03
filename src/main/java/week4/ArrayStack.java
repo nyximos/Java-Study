@@ -13,7 +13,7 @@ public class ArrayStack {
         if (top < arr.length-1) {
             arr[++top] = data;
         } else {
-            throw new ArrayIndexOutOfBoundsException();
+            throw new StackOverflowError();
         }
     }
 
